@@ -1,6 +1,6 @@
 import React from "react";
 
-const libri = [
+const articoli = [
   'Il Signore degli Anelli',
   'Lo Squalo',
   'Il Piccolo Principe',
@@ -9,7 +9,15 @@ const libri = [
 ];
 
 function App() {
-  return ()
+  return (
+    <div className="container">
+      <div className="row">
+        <div className="col-12">
+          
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default App
