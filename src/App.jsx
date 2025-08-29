@@ -10,10 +10,14 @@ const articoli = [
 
 function App() {
   return (
-    <div className="container">
+    <div className="container my-5">
       <div className="row">
         <div className="col-12">
-          
+          <ul className="list-unstyled">
+            {articoli.map((titolo, index) => (
+              <li key={index}>{titolo}</li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
