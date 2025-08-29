@@ -1,7 +1,15 @@
+import React from "react";
+
+const libri = [
+  'Il Signore degli Anelli',
+  'Lo Squalo',
+  'Il Piccolo Principe',
+  'Orgoglio e Pregiudizio',
+  'Harry Potter e la Pietra Filosofale',
+];
+
 function App() {
-  return (
-    <h1>Hello world</h1>
-  )
+  return ()
 }
 
 export default App
