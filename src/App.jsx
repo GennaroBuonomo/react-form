@@ -26,6 +26,18 @@ function App() {
                 })}
             </ul>
           </div>
+          <div className="col-12">
+            <form className="mt-4">
+              <div className="d-flex">
+              <input 
+               type="text"
+               className="form-control me-2"
+               placeholder="inserisci articolo"
+              />
+              <button className="btn btn-success">Inserisci</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
