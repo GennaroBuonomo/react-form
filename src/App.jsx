@@ -9,6 +9,7 @@ const initialArticles = [
 ];
 
 function App() {
+  const [newArticle, setNewArticle] = useState("");
   return (
     <> 
     <div className="container my-5">
@@ -33,6 +34,7 @@ function App() {
                type="text"
                className="form-control me-2"
                placeholder="inserisci articolo"
+               value={newArticle}
               />
               <button className="btn btn-success">Inserisci</button>
               </div>
