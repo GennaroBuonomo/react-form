@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 
 const initialArticles = [
   "Il Signore degli Anelli",
@@ -10,6 +10,12 @@ const initialArticles = [
 
 function App() {
   const [newArticle, setNewArticle] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Articolo aggiornato");
+  };
+
   return (
     <> 
     <div className="container my-5">
@@ -28,13 +34,14 @@ function App() {
             </ul>
           </div>
           <div className="col-12">
-            <form className="mt-4">
+            <form onSubmit={handleSubmit} className="mt-4">
               <div className="d-flex">
               <input 
                type="text"
                className="form-control me-2"
                placeholder="inserisci articolo"
                value={newArticle}
+               onChange={(e) => setNewArticle(e.target.value)}
               />
               <button className="btn btn-success">Inserisci</button>
               </div>
